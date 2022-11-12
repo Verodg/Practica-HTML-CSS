@@ -4,28 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica Portfolio</title>
-    <link rel="stylesheet" href="styles/reset.css">
+    <title>Portfolio práctica</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="imagenesdegokupng3-1.png" alt="logo de la web">
-            <h2 class="nombre-web">KAKAROTTO</h2>
+            <img src="images/gokunube.png" alt="log-web">
+            <h2 class="nombre-web">KAKAROTO</h2>
         </div>
         <nav>
-            <a href="" class="nav-link">Proyectos</a>
-            <a href="" class="nav-link">Skills</a>
-            <a href="" class="nav-link">Contacto</a>
-
+            <a href="#portfolio" class="nav-link" id="nav-link-portfolio">Proyectos</a>
+            <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+            <a href="contact" class="nav-link" id="nav-link-contact">Contacto</a>
         </nav>
-
     </header>
 
+    <div class="imagen">
+        <h1> GOKU Portfolio</h1>
+        <img src="images/casa Goku.png" alt="Foto de la casa de Goku" style="width: 1000px;">
+        
+    </div>
+
+    <main>
+
+        <section id="portfolio" class="section">
+            <article>
+                <h2> Sobre mi</h2>
+                <p> Soy Goku un persone de ánime creado por Akira Toriyama. Soy el protagonista de Dragon Ball.
+                    Me gusta volar sobre las nubes.
+                    
+                </p>
+            </article>
+
+            <div class="skill">
+                <h1>Mis habilidades programando</h1>
+                <p>HTML</p>
+                <div class="container">
+                    <div class="skills html">20%</div>
+                <p>CSS</p>
+                <div class="container">
+                    <div class="skills css">10%</div>
+                <p>GIT</p>
+                <div class="container">
+                    <div class="skills git">30%</div>
+                <p>PYTHON</p>
+                <div class="container">
+                    <div class="skills python">5%</div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+
+            <h3>Contacta conmigo</h3>
+
+            <form action="#" method="post">
+
+                <div class="form-container">
+                    <span>
+                        <label for="name">Nombre: </label>
+                        <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
+                    </span>
+                    <span>
+                        <label for="lastName">Apellido: </label>
+                        <input required id="lastName" name="lastName" type="text" placeholder="Añade tu apellido">
+                    </span>
+                    <span>
+                        <label for="phoneNumber">Teléfono: </label>
+                        <input required id="phoneNumber" name="phoneNumber" type="number" placeholder="Añade el teléfono" minlength="9">
+                    </span>
+                    <span>
+                        <label for="gitHub">Gihub username: </label>
+                        <input id="gitHub" name="gitHub" type="text" placeholder="@<username>" pattern="^@[^\s]+">
+                    </span>
+                </div>
+                <p>¿Cómo me conociste?</p>
+                    <div>
+                        <input required id="uni" type="radio" name="meet" value="uni">
+                        <label for="uni">Univerisdad</label>
+                    </div>
+                    <div>
+                        <input required id="school" type="radio" name="meet" value="school">
+                        <label for="school">Colegio</label>
+                    </div>
+                    <div>
+                        <input required  id="keepcoding" type="radio" name="meet" value="keepcoding">
+                        <label for="keepcoding">KeepCoding kick-off</label>
+                    </div>
+                    
+                    <div>
+                        <input required id="gitHubField" type="radio" name="meet" value="net">
+                        <label for="gitHubField">GitHub</label>
+                    </div>
+            
+                <label for="message">Mensaje: </label>
+                <textArea id="message" name="message" maxlength="200" placeholder="Escribe aquí tu mensaje (max 200 caracteres)"></textarea>
+
+                <input type="submit" name="submit" value="Submit">
+
+            </form>
+
+        </section>
+
+
+            
+              
+
+     </main>
 
 
 
-    
+
+
+     <footer class="text-center footer-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h3>Sígueme</h3>
+                    <div class="footerlogos">
+                        <img src="images/logogithub.png" alt="Sígueme en GitHub" style="width: 30px;">
+                        <img src="images/linkedinvector.png" alt="Sígueme en Linkedin" style="height:30px ;">
+
+                    </div>  
+               
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
+            
+
+
+
+
+
+
+
+   
